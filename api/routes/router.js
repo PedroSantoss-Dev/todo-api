@@ -4,7 +4,10 @@ const router = express.Router()
 taskController = new taskController();
 
 router.post('/register', taskController.create)
-router.get('/',taskController.read)
-router.get('/:id', taskController.readAll)
+router.get('/',taskController.readAll)
+router.get('/:id', taskController.readById)
+router.delete('/:id' , taskController.delete)
+router.put('/:id', taskController.update)
+
 
 module.exports = router

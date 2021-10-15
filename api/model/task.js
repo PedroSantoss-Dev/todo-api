@@ -11,21 +11,21 @@ const taskSchema = new mongoose.Schema({
         lowercase: true,
     },
     prioridade:{
-        type:String,
-        required: true,
+        type:String
         
     },
     status:{
         type:String,
-
+        required: true
     },
     prazo : {
         type: String,
+        required: true
     },
 
     createdAt:{
-         type:Date,
-         default: Date.now,
+        type:Date,
+        default: Date.now,
     }
 
 });
